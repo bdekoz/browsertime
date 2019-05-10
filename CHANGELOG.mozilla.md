@@ -1,6 +1,11 @@
 # Browsertime ChangeLog Mozilla
 
-## 2019-05-04
+## 2019-05-10
+* vendor-scripts/clear-persistent-data-stop.js: Use privileged JS to
+  work around browser stop issue from BZ/1298921
+
+
+## 2019-05-09
 * vendor-scripts/clear-persistent-data-stop.js: Attempt two.
 
 
@@ -11,9 +16,11 @@
 * vendor-scripts/clear-persistent-data-stop.js
 New scripts for clearing persistent telemetry data
 
+
 ## 2019-05-03
 
 * lib/firefox/webdriver/firefoxPreferences.js: Tweak prefs.
+
 
 ## 2019-04-26
 
@@ -27,6 +34,7 @@ New scripts for clearing persistent telemetry data
 
 * lib/firefox/webdriver/firefoxPreferences.js: Add prefs.
 * one.bkoz.sh: Add in chrome non-wrapper, gve, firetv's.
+
 
 ## 2019-04-26
 
