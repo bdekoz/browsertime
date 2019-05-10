@@ -1,4 +1,4 @@
-FROM sitespeedio/webbrowsers:chrome-73-firefox-66
+FROM sitespeedio/webbrowsers:chrome-74-firefox-66.0.4
 
 ENV BROWSERTIME_XVFB true
 ENV BROWSERTIME_CONNECTIVITY__ENGINE external
@@ -11,6 +11,9 @@ COPY docker/webpagereplay/wpr_cert.pem /webpagereplay/certs/
 COPY docker/webpagereplay/wpr_key.pem /webpagereplay/certs/
 COPY docker/webpagereplay/deterministic.js /webpagereplay/scripts/deterministic.js
 COPY docker/webpagereplay/LICENSE /webpagereplay/
+
+COPY vendor.mozilla /opt/firefox-nightly
+COPY vendor-scripts /vendor-scripts
 
 RUN sudo apt-get update && sudo apt-get install libnss3-tools \
   net-tools -y && \

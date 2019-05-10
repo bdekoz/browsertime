@@ -4,6 +4,8 @@
 !package.json
 !docker
 !vendor
+!vendor.mozilla
+!vendor-scripts
 !browserscripts
 !browsersupport
 !index.js
