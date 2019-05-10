@@ -1,5 +1,11 @@
+'use strict';
+
 module.exports = async function(context, commands) {
 
+  // Step 1: go to blank page and await further instructions.
+  await commands.navigate("about:blank");
+    
+  // Step 2: clear 
   const script = `
   const {Services} = ChromeUtils.import("resource://gre/modules/Services.jsm");
 
@@ -28,10 +34,9 @@ module.exports = async function(context, commands) {
   console.log("persist clear");
   const valueclear = await commands.js.runPrivileged(script);
 
+  // Step 3: stop    
   console.log("stop");
-  //const valuestop = await commands.js.stop();
-
-    //const driver = context.selenium.driver;
+  const driver = context.selenium.driver;
   //const valuestop = driver.quit();
 
   console.log("end pre-script actions");

@@ -1,6 +1,10 @@
 # Browsertime ChangeLog Mozilla
 
 ## 2019-05-04
+* vendor-scripts/clear-persistent-data-stop.js: Attempt two.
+
+
+## 2019-05-04
 
 * vendor-scripts/clear-probes.js: 
 * vendor-scripts/clear-probes-stop.js: 
