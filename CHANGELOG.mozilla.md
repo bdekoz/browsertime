@@ -1,11 +1,20 @@
 # Browsertime ChangeLog Mozilla
 
+
+## 2019-05-13
+
+* lib/firefox/webdriver/firefoxPreferences.js:
+Full-resolution timer preferences.
+
+
 ## 2019-05-10
+
 * vendor-scripts/clear-persistent-data-stop.js: Use privileged JS to
   work around browser stop issue from BZ/1298921
 
 
-## 2019-05-09
+## 2019-05-04
+
 * vendor-scripts/clear-persistent-data-stop.js: Attempt two.
 
 
